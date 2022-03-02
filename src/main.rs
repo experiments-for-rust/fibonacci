@@ -8,5 +8,5 @@ fn main() {
         stdin().read_line(&mut a).expect("Error occurred.");
         break;
     }
-    println!("a={}",a);
+    let a:i32 = guess.trim().parse().expect("Error occurred.");
 }
