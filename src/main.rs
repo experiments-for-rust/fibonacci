@@ -1,18 +1,25 @@
 use std::io::{stdin, stdout, Write};
 
 fn main() {
-    let mut a = String::new();
     loop {
         print!("Input arity: ");
         stdout().flush().unwrap();
+
+        let mut a = String::new();
         stdin().read_line(&mut a).expect("error");
+        
         let a: u64 = match a.trim().parse() {
             Ok(num) => num,
             Err(_) => {
                 println!("Eroor occurred.");
                 continue;
-            }
+            },
         };
+
+        if a == 0 {
+            println!("Eroor occurred.");
+            continue;
+        }
 
         let mut i = 1;
         while i <= a {
