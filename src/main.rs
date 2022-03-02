@@ -13,11 +13,12 @@ fn main(){
     let mut i=1;
     while i<=a {
         print!("{} ",fbnc(i));
+        i+=1;
     }
     println!("");
 }
 fn fbnc(a:i32)->i32{
-    if a=1|a=2{
+    if a==1||a==2{
         return 1;
     }
     return fbnc(a-2)+fbnc(a-1);
