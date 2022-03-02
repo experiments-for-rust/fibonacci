@@ -6,8 +6,8 @@ fn main() {
         stdout().flush().unwrap();
 
         let mut a = String::new();
-        stdin().read_line(&mut a).expect("error");
-        
+        stdin().read_line(&mut a).expect("readline_error");
+
         let a: u64 = match a.trim().parse() {
             Ok(num) => num,
             Err(_) => {
