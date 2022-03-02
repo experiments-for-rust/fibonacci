@@ -12,7 +12,7 @@ fn main(){
     
     let mut i=1;
     while i<=a {
-        print!("{} ",fnbc(i));
+        print!("{} ",fbnc(i));
     }
     println!("");
 }
@@ -20,5 +20,5 @@ fn fbnc(a:i32)->i32{
     if a=1|a=2{
         return 1;
     }
-    return fnbc(a-2)+fnbc(a-1);
+    return fbnc(a-2)+fbnc(a-1);
 }
