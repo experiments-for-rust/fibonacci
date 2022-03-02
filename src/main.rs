@@ -2,7 +2,7 @@ use std::io::{stdin, stdout, Write};
 
 fn main() {
     loop {
-        print!("Input arity: ");
+        print!("Input term number: ");
         stdout().flush().unwrap();
 
         let mut a = String::new();
